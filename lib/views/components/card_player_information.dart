@@ -43,6 +43,7 @@ class CardPlayerInformation extends StatelessWidget {
                     Text(
                       faker.person.name(),
                       style: const TextStyle(
+                          overflow: TextOverflow.ellipsis,
                           color: Colors.white,
                           fontWeight: FontWeight.bold,
                           fontSize: 28),
@@ -53,11 +54,14 @@ class CardPlayerInformation extends StatelessWidget {
             ),
           ),
         ),
-        const Positioned(
+        Positioned(
           top: 5,
           right: 5,
-          child: CircleAvatar(
-            child: Icon(Icons.description),
+          child: IconButton(
+            onPressed: () {},
+            icon: const CircleAvatar(
+              child: Icon(Icons.description),
+            ),
           ),
         ),
       ],

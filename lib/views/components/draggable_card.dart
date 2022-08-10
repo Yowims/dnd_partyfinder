@@ -7,9 +7,9 @@ class DraggableCard extends StatefulWidget {
   ///
   /// The [child] property has to be a [Widget] you'll put as a child of a classic material [Card].
   ///
+  final Widget child;
   const DraggableCard({Key? key, required this.child}) : super(key: key);
 
-  final Widget child;
   @override
   State<DraggableCard> createState() => _DraggableCardState();
 }
